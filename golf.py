@@ -39,7 +39,7 @@ if not hole1 == 0:
   for index, player_row in score_card.iterrows():
     player_name = player_row['Player']
     player_score = player_row[hole1]
-    score_board_df.iloc[player_name, 'Score'] = score_board_df.iloc[player_name, 'Score'] + player_score
+    score_board_df.loc[player_name, 'Score'] = score_board_df.loc[player_name, 'Score'] + player_score
 
 
 st.dataframe(score_board)
