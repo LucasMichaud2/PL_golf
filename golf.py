@@ -39,4 +39,4 @@ if not hole1 == 0:
   for index, player_row in score_card.iterrows():
     st.dataframe(player_row)
   
-
+ 
