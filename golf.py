@@ -39,6 +39,6 @@ if not hole1 == 0:
   for index, player_row in score_card.iterrows():
     player_name = player_row['Player']
     player_score = player_row['0']
-    st.write(player_score)
+    st.dataframe(player_row)
   
  
