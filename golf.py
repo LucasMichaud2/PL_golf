@@ -49,6 +49,7 @@ if not hole2 == 0:
 
 score_board = score_board.sort_values(by='Score')
 score_board = score_board.reset_index(drop=True)
+score_board.index = score_board.index + 1 
 st.dataframe(score_board)
   
  
