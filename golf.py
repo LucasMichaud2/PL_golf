@@ -41,6 +41,12 @@ if not hole1 == 0:
     player_score = player_row[hole1]
     score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
 
+if not hole2 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole2]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
 
 st.dataframe(score_board)
   
