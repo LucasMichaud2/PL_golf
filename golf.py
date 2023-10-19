@@ -37,6 +37,6 @@ hole9 = col9.number_input('Hole 9', value=0)
 
 if not hole1 == 0:
   for index, player_row in score_card.iterrows():
-    st.write(index)
+    st.write(player_row)
   
 
