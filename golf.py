@@ -47,7 +47,7 @@ if not hole2 == 0:
     player_score = player_row[hole2]
     score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
 
-score_board = score_board.sort_value(by='Score')
+score_board = score_board.sort_values(by='Score')
 st.dataframe(score_board)
   
  
