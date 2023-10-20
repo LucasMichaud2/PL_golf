@@ -47,6 +47,48 @@ if not hole2 == 0:
     player_score = player_row[hole2]
     score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
 
+if not hole3 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole3]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
+if not hole4 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole4]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
+if not hole5 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole5]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
+if not hole6 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole6]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
+if not hole7 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole7]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
+if not hole8 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole8]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
+if not hole9 == 0:
+  for index, player_row in score_card.iterrows():
+    player_name = player_row['Player']
+    player_score = player_row[hole9]
+    score_board.loc[score_board['Player'] == player_name, 'Score'] = score_board.loc[score_board['Player'] == player_name, 'Score'] + player_score
+
 score_board = score_board.sort_values(by='Score')
 score_board = score_board.reset_index(drop=True)
 score_board.index = score_board.index + 1 
