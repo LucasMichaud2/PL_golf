@@ -32,7 +32,7 @@ score_board = [
   ['Lucas', 0],
   ['Mercedes', 0],
   ['Charlotte', 0],
-  ['Danielle, 0],
+  ['Danielle', 0],
   ['Franck', 0],
   ['JC', 0,],
   ['Alain', 0],
