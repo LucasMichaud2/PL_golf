@@ -125,6 +125,9 @@ if not hole9 == 0:
 score_board = score_board.sort_values(by='Score', ascending=False)
 score_board = score_board.reset_index(drop=True)
 score_board.index = score_board.index + 1 
+score_board = score_board.style.set_table_attributes('style="font-size: 20px; width: 800px;"')
+
+
 st.dataframe(score_board)
   
  
